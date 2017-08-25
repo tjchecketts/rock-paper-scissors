@@ -1,0 +1,34 @@
+/* body {
+
+} */
+
+h1, h2 {
+  text-align: center;
+}
+
+#game {
+  text-align: center;
+  text-align-last:center;
+  float: center;
+}
+
+#rock {
+  /* color: red; */
+  text-align: left;
+  display: inline;
+
+}
+
+#paper {
+  /* color: black; */
+  text-align: center;
+  display: inline;
+
+}
+
+#scissors {
+  /* color: green; */
+  text-align: right;
+  display: inline;
+
+}
