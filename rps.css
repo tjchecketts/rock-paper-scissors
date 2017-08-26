@@ -32,3 +32,8 @@ h1, h2 {
   display: inline;
 
 }
+
+#rock_img, #paper_img, #scissors_img {
+  display: inline;
+  text-align: center;
+}
