@@ -12,28 +12,16 @@ h1, h2 {
   float: center;
 }
 
-#rock {
-  /* color: red; */
-  text-align: left;
+#rock, #paper, #scissors {
   display: inline;
 
 }
 
-#paper {
-  /* color: black; */
-  text-align: center;
-  display: inline;
-
-}
-
-#scissors {
-  /* color: green; */
-  text-align: right;
-  display: inline;
-
-}
-
-#rock_img, #paper_img, #scissors_img {
+html {
   display: inline;
   text-align: center;
 }
+
+/* #rock_img, #paper_img, #scissors_img {
+
+} */

@@ -59,10 +59,31 @@ $(document).ready(function() {
 
   //   };
 
-  //   $('#rock_img').append('<img' + ' ' + 'src="ninja.jpg"' + ' ' + 'alt="cartoon ninja"' + ' ' + imgSize);
-  //   $('#paper_img').append('<img' + ' ' + 'src="ninja.jpg"' + ' ' + 'alt="cartoon ninja"' + ' ' + imgSize);
-  //   $('#scissors_img').append('<img' + ' ' + 'src="ninja.jpg"' + ' ' + 'alt="cartoon ninja"' + ' ' + imgSize);
+  //   $('#rock_img').text('<img' + ' ' + 'src="ninja.jpg"' + ' ' + 'alt="cartoon ninja"' + ' ' + imgSize);
+  //   $('#paper_img').text('<img' + ' ' + 'src="ninja.jpg"' + ' ' + 'alt="cartoon ninja"' + ' ' + imgSize);
+  //   $('#scissors_img').text('<img' + ' ' + 'src="ninja.jpg"' + ' ' + 'alt="cartoon ninja"' + ' ' + imgSize);
 
   // });
 
 })
+
+
+
+///MECAHNICES OF RPS
+
+var rndm_num = Math.floor(Math.random() * 3 + 1)
+var oppenent = [];
+switch(rndm_num) {
+  case rndm_num === 1:
+    opponent = 1
+    break;
+  case rndm_num === 2:
+    opponent = 2
+    break;
+  case rndm_num === 3:
+    opponent = 3
+    break;
+
+};
+
+// console.log(opponent)
