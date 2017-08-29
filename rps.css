@@ -2,24 +2,23 @@
 
 } */
 
-h1, h2 {
+html {
+  display: inline;
   text-align: center;
 }
 
-#game {
+/* h1, h2 {
   text-align: center;
+} */
+
+#game {
+  /* text-align: center; */
   text-align-last:center;
   float: center;
 }
 
 #rock, #paper, #scissors {
   display: inline;
-
-}
-
-html {
-  display: inline;
-  text-align: center;
 }
 
 /* #rock_img, #paper_img, #scissors_img {
