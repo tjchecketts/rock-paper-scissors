@@ -1,18 +1,9 @@
-/* body {
-
-} */
-
 html {
   display: inline;
   text-align: center;
 }
 
-/* h1, h2 {
-  text-align: center;
-} */
-
 #game {
-  /* text-align: center; */
   text-align-last:center;
   float: center;
 }
@@ -21,6 +12,11 @@ html {
   display: inline;
 }
 
-/* #rock_img, #paper_img, #scissors_img {
+#rock_img, #paper_img, #scissors_img {
+  border: 3px solid black;
+  margin: 5px
+}
 
-} */
+h3 {
+  display: inline;
+}
