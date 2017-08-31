@@ -79,11 +79,12 @@ $(document).ready(function() {
   // }
 
   // function lose() {
-  //   loses += 1;
-  //   updateUi('#loses');
+  //   losses += 1;
+  //   updateUi('#losses');
   // }
 
-  $('#rock_img').on('click', function() {
+  // need to have it on whole document and with 2 parameters
+  $(document).on('click', '#rock_img', function() {
     var rndm_num = Math.floor(Math.random() * 3 + 1)
     var yourChoice = 1;
     
@@ -111,7 +112,7 @@ $(document).ready(function() {
 
   });
 
-  $('#paper_img').on('click', function() {
+  $(document).on('click', '#paper_img', function() {
     var rndm_num = Math.floor(Math.random() * 3 + 1)
     var yourChoice = 2;
     
@@ -130,7 +131,7 @@ $(document).ready(function() {
 
   });
 
-  $('#scissors_img').on('click', function() {
+  $(document).on('click', '#scissors_img', function() {
     var rndm_num = Math.floor(Math.random() * 3 + 1)
     var yourChoice = 3;
     
