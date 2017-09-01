@@ -66,88 +66,84 @@ $(document).ready(function() {
 
   })
 
-  ///MECAHNICES OF RPS
-
-  // function tie() {
-  //   ties += 1;
-  //   updateUi('#ties');
-  // }
-
-  // function win() {
-  //   wins += 1;
-  //   updateUi('#wins');
-  // }
-
-  // function lose() {
-  //   losses += 1;
-  //   updateUi('#losses');
-  // }
-
   // need to have it on whole document and with 2 parameters
+  var plusOneWin = 0;
+  var plusOneLoss = 0;
+  var plusOneTie = 0;
+  
   $(document).on('click', '#rock_img', function() {
     var rndm_num = Math.floor(Math.random() * 3 + 1)
     var yourChoice = 1;
     
     console.log("Your Choice: " + yourChoice);
-    console.log("Opponent's Choice: " + rndm_num)
+    console.log("Opponent's Choice: " + rndm_num);
 
     if (rndm_num === 1) {
-      console.log("You tied!");
-
-      // attempt to count up winners class
-      // var i=0;
-      // $('.winners').each(function(){
-      //     i++;
-      //     var newID='winners'+i;
-      //     $(this).attr('#ties',newID);
-      //     $(this).val(i);
-      // });
+      console.log("You tied!")
+      plusOneTie += 1;
+      $('#ties').html(plusOneTie)
     }
     else if (rndm_num === 2) {
       console.log("You lose!")
+      plusOneLoss += 1;
+      $('#losses').html(plusOneLoss)
     }
     else if (rndm_num === 3) {
       console.log("You win!")
+      plusOneWin += 1;
+      $('#wins').html(plusOneWin)
     }
-
+    
   });
-
+  
   $(document).on('click', '#paper_img', function() {
     var rndm_num = Math.floor(Math.random() * 3 + 1)
     var yourChoice = 2;
     
     console.log("Your Choice: " + yourChoice);
     console.log("Opponent's Choice: " + rndm_num)
-
+    
     if (rndm_num === 1) {
       console.log("You win!")
+      plusOneWin += 1;
+      $('#wins').html(plusOneWin)
     }
     else if (rndm_num === 2) {
       console.log("You tied!")
+      plusOneTie += 1;
+      $('#ties').html(plusOneTie)
     }
     else if (rndm_num === 3) {
       console.log("You lose!")
+      plusOneLoss += 1;
+      $('#losses').html(plusOneLoss)
     }
-
+    
   });
-
+  
   $(document).on('click', '#scissors_img', function() {
     var rndm_num = Math.floor(Math.random() * 3 + 1)
     var yourChoice = 3;
     
     console.log("Your Choice: " + yourChoice);
     console.log("Opponent's Choice: " + rndm_num)
-
+    
     if (rndm_num === 1) {
       console.log("You lose!");
+      plusOneLoss += 1;
+      $('#losses').html(plusOneLoss)
     }
     else if (rndm_num === 2) {
       console.log("You win!");
+      plusOneWin += 1;
+      $('#wins').html(plusOneWin)
     }
     else if (rndm_num === 3) {
       console.log("You tied!");
+      plusOneTie += 1;
+      $('#ties').html(plusOneTie)
     }
-
+    
   }) ; 
-
+  
 });
