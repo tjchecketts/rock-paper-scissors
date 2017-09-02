@@ -1,13 +1,19 @@
 <html>
   <head>
     <title>Let's play RPS!</title>
+    <!-- attach CSS -->
     <link rel="stylesheet" type="text/css" href="css/rps.css">
   </head>
-  
+
   <body>
+
+    <!-- background class -->
+    <div class="background"></div>
+
     <h1>Let's play a game of Rock, Paper, Scissors!</h1>
     <h2>Well, sorta... What type of RPS do you want to play?</h2>
     
+    <!-- dropdown box -->
     <select id="game">
       <option value="rps">Rock, Paper, Scissors</option>
       <option value="bhn">Bear, Hunter, Ninja</option>
@@ -16,6 +22,7 @@
     
     <hr></hr>
     
+    <!-- fill in instructions and what beats what -->
     <section>
       <h2 id="rock">Rock</h2>
       <h2 id="paper">Paper</h2>
@@ -24,12 +31,14 @@
     
     <br>
 
+    <!-- dynamic images -->
     <div class="images">
       <img id="rock_img" src="images/rock.jpg" alt="Rock cartoon hand sign" height="300" width="300">
       <img id="paper_img" src="images/paper.jpg" alt="Paper cartoon hand sign" height="300" width="300">
       <img id="scissors_img" src="images/scissors.jpg" alt="Scissors cartoon hand sign" height="300" width="300">
     </div>
 
+    <!-- count score -->
     <div class="winners">
       <h3> Wins: </h3>
       <h3 id="wins">0</h3>
@@ -40,6 +49,7 @@
     </div>
   </body>
 
+  <!-- attach JS and jQuery -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="js/rps.js"></script>
 </html>

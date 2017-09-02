@@ -1,5 +1,7 @@
+// load entire page before JS
 $(document).ready(function() {
-
+  
+  // establish variables
   $('#game').on('change', function() {
     var rockChange;
     var paperChange;
@@ -9,7 +11,7 @@ $(document).ready(function() {
     var scissorsImg;
     var imgSize = 'height="300"' + ' ' + 'width="300">'
 
-    // change the text
+    // establish text changes when select option changes
     switch(this.value) {
       case 'rps':
         rockChange = "Rock";
@@ -29,11 +31,12 @@ $(document).ready(function() {
 
     };
 
+    // change text
     $('#rock').text(rockChange);
     $('#paper').text(paperChange);
     $('#scissors').text(scissorsChange);
 
-    // change the image
+    // establish image changes when select option changes
     switch(this.value) {
       case 'rps':
         rockImg = '<img' + ' ' + 'id="rock_img"' + ' ' + 'src="images/rock.jpg"' + ' ' 
@@ -62,15 +65,17 @@ $(document).ready(function() {
 
     };
 
+    // change images
     $('.images').html(rockImg + ' ' + paperImg + ' ' + scissorsImg);
 
   })
 
-  // need to have it on whole document and with 2 parameters
+  // need these 3 variable outside image click jQueries
   var plusOneWin = 0;
   var plusOneLoss = 0;
   var plusOneTie = 0;
-  
+
+  // user picks rock
   $(document).on('click', '#rock_img', function() {
     var rndm_num = Math.floor(Math.random() * 3 + 1)
     var yourChoice = 1;
@@ -93,6 +98,7 @@ $(document).ready(function() {
     
   });
   
+  // user picks paper
   $(document).on('click', '#paper_img', function() {
     var rndm_num = Math.floor(Math.random() * 3 + 1)
     var yourChoice = 2;
@@ -115,6 +121,7 @@ $(document).ready(function() {
     
   });
   
+  // user picks scissors
   $(document).on('click', '#scissors_img', function() {
     var rndm_num = Math.floor(Math.random() * 3 + 1)
     var yourChoice = 3;

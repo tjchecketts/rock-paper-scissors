@@ -1,12 +1,34 @@
+/* center all text */
 html {
-  display: inline;
+  display: inline-block;
   text-align: center;
+  margin: 15px;
 }
 
+/* need both backgrounds for image to be opaque */
+background {
+  position: relative;
+}
+
+.background:after {
+   content : "";
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-image: url(../images/background-rps.png); 
+   width: 100%;
+   height: 100%;
+   opacity : 0.15;
+   z-index: -1;
+}
+
+/* centers the dropdown box */
 #game {
   text-align-last: center;
 }
 
+/* need inline-block on everything below */
 #rock, #paper, #scissors {
   display: inline-block;
   margin: auto;
