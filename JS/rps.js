@@ -36,27 +36,27 @@ $(document).ready(function() {
     // change the image
     switch(this.value) {
       case 'rps':
-        rockImg = '<img' + ' ' + 'id="rock_img"' + ' ' + 'src="rock.jpg"' + ' ' 
+        rockImg = '<img' + ' ' + 'id="rock_img"' + ' ' + 'src="images/rock.jpg"' + ' ' 
           + 'alt="Rock cartoon hand sign"' + ' ' + imgSize;
-        paperImg = '<img' + ' ' + 'id="paper_img"' + ' ' + 'src="paper.jpg"' + ' ' 
+        paperImg = '<img' + ' ' + 'id="paper_img"' + ' ' + 'src="images/paper.jpg"' + ' ' 
           + 'alt="Paper cartoon hand sign"' + ' ' + imgSize;
-        scissorsImg = '<img' + ' ' + 'id="scissors_img"' + ' ' + 'src="scissors.jpg"' + ' ' 
+        scissorsImg = '<img' + ' ' + 'id="scissors_img"' + ' ' + 'src="images/scissors.jpg"' + ' ' 
           + 'alt="Scissors cartoon hand sign"' + ' ' + imgSize;
         break;
       case 'bhn':
-        rockImg = '<img' + ' ' + 'id="rock_img"' + ' ' + 'src="bear.jpg"' + ' ' 
+        rockImg = '<img' + ' ' + 'id="rock_img"' + ' ' + 'src="images/bear.jpg"' + ' ' 
           + 'alt="cartoon teddy bear"' + ' ' + imgSize;
-        paperImg = '<img' + ' ' + 'id="paper_img"' + ' ' + 'src="hunter.jpg"' + ' ' 
+        paperImg = '<img' + ' ' + 'id="paper_img"' + ' ' + 'src="images/hunter.jpg"' + ' ' 
           + 'alt="cartoon hunter Elmer Fudd"' + ' ' + imgSize;
-        scissorsImg = '<img' + ' ' + 'id="scissors_img"' + ' ' + 'src="ninja.gif"' + ' ' 
+        scissorsImg = '<img' + ' ' + 'id="scissors_img"' + ' ' + 'src="images/ninja.gif"' + ' ' 
           + 'alt="cartoon ninja"' + ' ' + imgSize;
         break;
       case 'dpk':
-        rockImg = '<img' + ' ' + 'id="rock_img"' + ' ' + 'src="dragon.jpg"' + ' ' 
+        rockImg = '<img' + ' ' + 'id="rock_img"' + ' ' + 'src="images/dragon.jpg"' + ' ' 
           + 'alt="cartoon dragon breathing fire"' + ' ' + imgSize;
-        paperImg = '<img' + ' ' + 'id="paper_img"' + ' ' + 'src="princess.jpg"' + ' ' 
+        paperImg = '<img' + ' ' + 'id="paper_img"' + ' ' + 'src="images/princess.jpg"' + ' ' 
           + 'alt="cartoon princess Anna"' + ' ' + imgSize;
-        scissorsImg = '<img' + ' ' + 'id="scissors_img"' + ' ' + 'src="knight.jpg"' + ' ' 
+        scissorsImg = '<img' + ' ' + 'id="scissors_img"' + ' ' + 'src="images/knight.jpg"' + ' ' 
           + 'alt="cartoon knight on horse"' + ' ' + imgSize;
         break;
 
@@ -74,9 +74,6 @@ $(document).ready(function() {
   $(document).on('click', '#rock_img', function() {
     var rndm_num = Math.floor(Math.random() * 3 + 1)
     var yourChoice = 1;
-    
-    console.log("Your Choice: " + yourChoice);
-    console.log("Opponent's Choice: " + rndm_num);
 
     if (rndm_num === 1) {
       console.log("You tied!")
@@ -100,9 +97,6 @@ $(document).ready(function() {
     var rndm_num = Math.floor(Math.random() * 3 + 1)
     var yourChoice = 2;
     
-    console.log("Your Choice: " + yourChoice);
-    console.log("Opponent's Choice: " + rndm_num)
-    
     if (rndm_num === 1) {
       console.log("You win!")
       plusOneWin += 1;
@@ -124,9 +118,6 @@ $(document).ready(function() {
   $(document).on('click', '#scissors_img', function() {
     var rndm_num = Math.floor(Math.random() * 3 + 1)
     var yourChoice = 3;
-    
-    console.log("Your Choice: " + yourChoice);
-    console.log("Opponent's Choice: " + rndm_num)
     
     if (rndm_num === 1) {
       console.log("You lose!");

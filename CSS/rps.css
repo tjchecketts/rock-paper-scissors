@@ -4,19 +4,21 @@ html {
 }
 
 #game {
-  text-align-last:center;
-  float: center;
+  text-align-last: center;
 }
 
 #rock, #paper, #scissors {
-  display: inline;
+  display: inline-block;
+  margin: auto;
+  width: 30%;
 }
 
 #rock_img, #paper_img, #scissors_img {
   border: 3px solid black;
-  margin: 5px
+  display: inline-block;
+  margin: auto;
 }
 
 h3 {
-  display: inline;
+  display: inline-block;
 }
