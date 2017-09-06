@@ -41,6 +41,18 @@ background {
   margin: auto;
 }
 
-h3 {
+h2 {
   display: inline-block;
+}
+
+#wins {
+  color: green;
+}
+
+#losses {
+  color: red;
+}
+
+#ties {
+  color: orange;
 }

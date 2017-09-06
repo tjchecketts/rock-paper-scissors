@@ -14,19 +14,19 @@ $(document).ready(function() {
     // establish text changes when select option changes
     switch(this.value) {
       case 'rps':
-        rockChange = "Rock";
-        paperChange = "Paper";
-        scissorsChange = "Scissors";
+        rockChange = "Rock beats Scissors";
+        paperChange = "Paper beats Rock";
+        scissorsChange = "Scissors beats Paper";
         break;
       case 'bhn':
-        rockChange = "Bear";
-        paperChange = "Hunter";
-        scissorsChange = "Ninja";
+        rockChange = "Bear beats Ninja";
+        paperChange = "Hunter beats Bear";
+        scissorsChange = "Ninja beats Hunter";
         break;
       case 'dpk':
-        rockChange = "Dragon";
-        paperChange = "Princess";
-        scissorsChange = "Knight";
+        rockChange = "Dragon beats Princess";
+        paperChange = "Princess beats Knight";
+        scissorsChange = "Knight beats Dragon";
         break;
 
     };
