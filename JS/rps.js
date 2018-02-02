@@ -9,7 +9,7 @@ $(document).ready(function() {
     var rockImg;
     var paperImg;
     var scissorsImg;
-    var imgSize = 'height="300"' + ' ' + 'width="300">'
+    var imgSize = 'height="300"' + ' ' + 'width="400">'
 
     // establish text changes when select option changes
     switch(this.value) {
@@ -39,27 +39,27 @@ $(document).ready(function() {
     // establish image changes when select option changes
     switch(this.value) {
       case 'rps':
-        rockImg = '<img' + ' ' + 'id="rock_img"' + ' ' + 'src="images/rock.jpg"' + ' ' 
+        rockImg = '<img' + ' ' + 'id="rock_img"' + ' ' + 'src="images/unsplash-rock.jpg"' + ' ' 
           + 'alt="Rock cartoon hand sign"' + ' ' + imgSize;
-        paperImg = '<img' + ' ' + 'id="paper_img"' + ' ' + 'src="images/paper.jpg"' + ' ' 
+        paperImg = '<img' + ' ' + 'id="paper_img"' + ' ' + 'src="images/unsplash-paper.jpg"' + ' ' 
           + 'alt="Paper cartoon hand sign"' + ' ' + imgSize;
-        scissorsImg = '<img' + ' ' + 'id="scissors_img"' + ' ' + 'src="images/scissors.jpg"' + ' ' 
+        scissorsImg = '<img' + ' ' + 'id="scissors_img"' + ' ' + 'src="images/unsplash-scissors.jpg"' + ' ' 
           + 'alt="Scissors cartoon hand sign"' + ' ' + imgSize;
         break;
       case 'bhn':
-        rockImg = '<img' + ' ' + 'id="rock_img"' + ' ' + 'src="images/bear.jpg"' + ' ' 
+        rockImg = '<img' + ' ' + 'id="rock_img"' + ' ' + 'src="images/unsplash-bear.jpg"' + ' ' 
           + 'alt="cartoon teddy bear"' + ' ' + imgSize;
-        paperImg = '<img' + ' ' + 'id="paper_img"' + ' ' + 'src="images/hunter.jpg"' + ' ' 
+        paperImg = '<img' + ' ' + 'id="paper_img"' + ' ' + 'src="images/unsplash-hunter.jpg"' + ' ' 
           + 'alt="cartoon hunter Elmer Fudd"' + ' ' + imgSize;
-        scissorsImg = '<img' + ' ' + 'id="scissors_img"' + ' ' + 'src="images/ninja.gif"' + ' ' 
+        scissorsImg = '<img' + ' ' + 'id="scissors_img"' + ' ' + 'src="images/open-ninja.jpg"' + ' ' 
           + 'alt="cartoon ninja"' + ' ' + imgSize;
         break;
       case 'dpk':
-        rockImg = '<img' + ' ' + 'id="rock_img"' + ' ' + 'src="images/dragon.jpg"' + ' ' 
+        rockImg = '<img' + ' ' + 'id="rock_img"' + ' ' + 'src="images/unsplash-dragon.jpg"' + ' ' 
           + 'alt="cartoon dragon breathing fire"' + ' ' + imgSize;
-        paperImg = '<img' + ' ' + 'id="paper_img"' + ' ' + 'src="images/princess.jpg"' + ' ' 
+        paperImg = '<img' + ' ' + 'id="paper_img"' + ' ' + 'src="images/unsplash-princess.jpg"' + ' ' 
           + 'alt="cartoon princess Anna"' + ' ' + imgSize;
-        scissorsImg = '<img' + ' ' + 'id="scissors_img"' + ' ' + 'src="images/knight.jpg"' + ' ' 
+        scissorsImg = '<img' + ' ' + 'id="scissors_img"' + ' ' + 'src="images/unsplash-knight.jpg"' + ' ' 
           + 'alt="cartoon knight on horse"' + ' ' + imgSize;
         break;
 
