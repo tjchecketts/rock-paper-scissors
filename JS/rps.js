@@ -40,27 +40,27 @@ $(document).ready(function() {
     switch(this.value) {
       case 'rps':
         rockImg = '<img' + ' ' + 'id="rock_img"' + ' ' + 'src="images/unsplash-rock.jpg"' + ' ' 
-          + 'alt="Rock cartoon hand sign"' + ' ' + imgSize;
+          + 'alt="small shiny pebbles"' + ' ' + imgSize;
         paperImg = '<img' + ' ' + 'id="paper_img"' + ' ' + 'src="images/unsplash-paper.jpg"' + ' ' 
-          + 'alt="Paper cartoon hand sign"' + ' ' + imgSize;
+          + 'alt="book with turning pages"' + ' ' + imgSize;
         scissorsImg = '<img' + ' ' + 'id="scissors_img"' + ' ' + 'src="images/unsplash-scissors.jpg"' + ' ' 
-          + 'alt="Scissors cartoon hand sign"' + ' ' + imgSize;
+          + 'alt="group of scissors"' + ' ' + imgSize;
         break;
       case 'bhn':
         rockImg = '<img' + ' ' + 'id="rock_img"' + ' ' + 'src="images/unsplash-bear.jpg"' + ' ' 
-          + 'alt="cartoon teddy bear"' + ' ' + imgSize;
+          + 'alt="polar bear"' + ' ' + imgSize;
         paperImg = '<img' + ' ' + 'id="paper_img"' + ' ' + 'src="images/unsplash-hunter.jpg"' + ' ' 
-          + 'alt="cartoon hunter Elmer Fudd"' + ' ' + imgSize;
+          + 'alt="hunters in camo"' + ' ' + imgSize;
         scissorsImg = '<img' + ' ' + 'id="scissors_img"' + ' ' + 'src="images/open-ninja.jpg"' + ' ' 
-          + 'alt="cartoon ninja"' + ' ' + imgSize;
+          + 'alt="black and white ninja"' + ' ' + imgSize;
         break;
       case 'dpk':
         rockImg = '<img' + ' ' + 'id="rock_img"' + ' ' + 'src="images/unsplash-dragon.jpg"' + ' ' 
-          + 'alt="cartoon dragon breathing fire"' + ' ' + imgSize;
+          + 'alt="Chinese dragon"' + ' ' + imgSize;
         paperImg = '<img' + ' ' + 'id="paper_img"' + ' ' + 'src="images/unsplash-princess.jpg"' + ' ' 
-          + 'alt="cartoon princess Anna"' + ' ' + imgSize;
+          + 'alt="princess with flower crown"' + ' ' + imgSize;
         scissorsImg = '<img' + ' ' + 'id="scissors_img"' + ' ' + 'src="images/unsplash-knight.jpg"' + ' ' 
-          + 'alt="cartoon knight on horse"' + ' ' + imgSize;
+          + 'alt="medieval knight"' + ' ' + imgSize;
         break;
 
     };

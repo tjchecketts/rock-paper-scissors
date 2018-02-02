@@ -2,8 +2,10 @@
 html {
   display: inline-block;
   text-align: center;
-  margin: 15px;
+  color: rgb(15, 15, 85);
+  margin: 25px;
   font-family: 'Modern Antiqua', cursive;
+  font-size: 18px;
 }
 
 /* need both backgrounds for image to be opaque */
@@ -28,12 +30,14 @@ background {
 
 #game {
   text-align-last: center;
-  background-color: #71B7DD;
-  color: white;
-  width: 210px;
-  height: 26px;
+  border: 2px solid tan;
+  color: rgb(15, 15, 85);
+  background-color: rgb(240, 218, 191);
+  width: 255px;
+  height: 30px;
   overflow: hidden;
-  font-size: 15px;
+  font-family: 'Modern Antiqua', cursive;
+  font-size: 18px;
 }
 
 /* need inline-block on everything below */
@@ -44,9 +48,11 @@ background {
 }
 
 #rock_img, #paper_img, #scissors_img {
-  border: 3px solid black;
+  border-radius: 8%;
+  border: 2px solid tan;
   display: inline-block;
-  margin: auto;
+  margin: 8px;
+  cursor: pointer;
 }
 
 h3 {
