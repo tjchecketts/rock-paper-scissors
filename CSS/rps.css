@@ -38,6 +38,10 @@ background {
   overflow: hidden;
   font-family: 'Modern Antiqua', cursive;
   font-size: 18px;
+  cursor: pointer;
+}
+#game.after {
+  cursor: pointer;
 }
 
 /* need inline-block on everything below */
