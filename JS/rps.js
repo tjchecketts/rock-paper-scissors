@@ -8,9 +8,9 @@ $(document).ready(function() {
     // establish text changes when select option changes
     switch(this.value) {
       case 'bhn':
-        $('#rock').text("Bear beats Ninja")
-        $('#paper').text("Hunter beats Bear")
-        $('#scissors').text("Ninja beats Hunter")
+        $('#rock').text("Bear eats Ninja")
+        $('#paper').text("Hunter shoots Bear")
+        $('#scissors').text("Ninja slays Hunter")
         break
       case 'kpd':
         $('#rock').text("Knight slays Dragon")
