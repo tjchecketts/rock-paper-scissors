@@ -52,12 +52,12 @@ $(document).ready(function() {
   var winsTotal = 0
   var lossesTotal = 0
   var tiesTotal = 0
-  var text = document.getElementById('choice-text')
+  var compChoice
+  var text = document.getElementById('result')
   var whichGame = document.getElementById('game')
-
-  // user picks rock
-  $(document).on('click', '#rock_img', function() {
-    var rndm_num = Math.floor(Math.random() * 3 + 1)
+  
+  function setVariables() {
+    compChoice = Math.floor(Math.random() * 3 + 1)
     switch(whichGame.value) {
       case 'bhn':
         dynRock = "Bear"
@@ -74,16 +74,21 @@ $(document).ready(function() {
         dynPaper = "Paper"
         dynScissors = "Scissors"
     }
-      
-    if (rndm_num === 1) {
+  }
+
+  // user picks rock
+  $(document).on('click', '#rock_img', function() {
+    setVariables()
+  
+    if (compChoice === 1) {
       text.innerHTML = `You tied! You chose ${dynRock} and the computer chose ${dynRock}.`
       $('#ties').html(++tiesTotal)
     }
-    else if (rndm_num === 2) {
+    else if (compChoice === 2) {
       text.innerHTML = `You lost! You chose ${dynRock} and the computer chose ${dynPaper}.`
       $('#losses').html(++lossesTotal)
     }
-    else if (rndm_num === 3) {
+    else if (compChoice === 3) {
       text.innerHTML = `You won! You chose ${dynRock} and the computer chose ${dynScissors}.`
       $('#wins').html(++winsTotal)
     }
@@ -91,33 +96,17 @@ $(document).ready(function() {
   
   // user picks paper
   $(document).on('click', '#paper_img', function() {
-    var rndm_num = Math.floor(Math.random() * 3 + 1)
-    switch(whichGame.value) {
-      case 'bhn':
-        dynRock = "Bear"
-        dynPaper = "Hunter"
-        dynScissors = "Ninja"
-        break
-      case 'kpd':
-        dynRock = "Knight"
-        dynPaper = "Princess"
-        dynScissors = "Dragon"
-        break
-      default:
-        dynRock = "Rock"
-        dynPaper = "Paper"
-        dynScissors = "Scissors"
-    }
+    setVariables()
     
-    if (rndm_num === 1) {
+    if (compChoice === 1) {
       text.innerHTML = `You won! You chose ${dynPaper} and the computer chose ${dynRock}.`
       $('#wins').html(++winsTotal)
     }
-    else if (rndm_num === 2) {
+    else if (compChoice === 2) {
       text.innerHTML = `You tied! You chose ${dynPaper} and the computer chose ${dynPaper}.`
       $('#ties').html(++tiesTotal)
     }
-    else if (rndm_num === 3) {
+    else if (compChoice === 3) {
       text.innerHTML = `You lost! You chose ${dynPaper} and the computer chose ${dynScissors}.`
       $('#losses').html(++lossesTotal)
     }
@@ -125,33 +114,17 @@ $(document).ready(function() {
   
   // user picks scissors
   $(document).on('click', '#scissors_img', function() {
-    var rndm_num = Math.floor(Math.random() * 3 + 1)
-    switch(whichGame.value) {
-      case 'bhn':
-        dynRock = "Bear"
-        dynPaper = "Hunter"
-        dynScissors = "Ninja"
-        break
-      case 'kpd':
-        dynRock = "Knight"
-        dynPaper = "Princess"
-        dynScissors = "Dragon"
-        break
-      default:
-        dynRock = "Rock"
-        dynPaper = "Paper"
-        dynScissors = "Scissors"
-    }
+    setVariables()
 
-    if (rndm_num === 1) {
+    if (compChoice === 1) {
       text.innerHTML = `You lost! You chose ${dynScissors} and the computer chose ${dynRock}.`
       $('#losses').html(++lossesTotal)
     }
-    else if (rndm_num === 2) {
+    else if (compChoice === 2) {
       text.innerHTML = `You won! You chose ${dynScissors} and the computer chose ${dynPaper}.`
       $('#wins').html(++winsTotal)
     }
-    else if (rndm_num === 3) {
+    else if (compChoice === 3) {
       text.innerHTML = `You tied! You chose ${dynScissors} and the computer chose ${dynScissors}.`
       $('#ties').html(++tiesTotal)
     }
