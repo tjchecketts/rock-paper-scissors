@@ -8,3 +8,5 @@ Current versions include: Bear, Hunter, Ninja and Knight, Princess, Dragon.
 
 TO-DO
 - ~~At some point, I'll add some text to more easily show what the computer selected~~
+- Reduce image sizes for quicker image load times
+- Make sure game is mobile friendly
